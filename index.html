@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mapping Mashups</title>
+  <meta name="description" content="Map experiments from Mapping Mashups, including entries for the #30DayMapChallenge.">
+  <style>
+    :root {
+      --bg: #f7f5f0;
+      --fg: #1d1d1b;
+      --muted: #6b6a66;
+      --rule: #d9d5cc;
+      --accent: #c2410c;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #161615;
+        --fg: #eceae4;
+        --muted: #9a988f;
+        --rule: #33322f;
+        --accent: #fb923c;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font: 17px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    main {
+      max-width: 40rem;
+      margin: 0 auto;
+      padding: 4rem 1rem 3rem;
+    }
+    h1 {
+      font-size: 2.25rem;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      margin: 0 0 0.5rem;
+    }
+    .lede { color: var(--muted); margin: 0 0 3rem; }
+    h2 {
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin: 0 0 0.5rem;
+    }
+    ul { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule); }
+    li { border-bottom: 1px solid var(--rule); }
+    li a {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      padding: 1rem 0;
+      color: inherit;
+      text-decoration: none;
+    }
+    li a:hover .name, li a:focus-visible .name { color: var(--accent); }
+    .name { font-weight: 600; font-size: 1.15rem; }
+    .arrow { color: var(--muted); }
+    a { color: var(--accent); }
+    footer { margin-top: 3rem; color: var(--muted); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Mapping Mashups</h1>
+    <p class="lede">Map experiments, mixing data and cartography in unexpected ways.</p>
+
+    <section>
+      <h2>#30DayMapChallenge 2026</h2>
+      <ul>
+        <li>
+          <a href="https://mappingmashups.github.io/time-zone-inversions/">
+            <span class="name">Time Zone Inversions</span>
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://mappingmashups.github.io/contourvolution/">
+            <span class="name">Contourvolution</span>
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <a href="https://github.com/mappingmashups">github.com/mappingmashups</a>
+    </footer>
+  </main>
+</body>
+</html>
